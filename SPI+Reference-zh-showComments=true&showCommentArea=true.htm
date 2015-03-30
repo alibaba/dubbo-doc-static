@@ -1716,7 +1716,7 @@ public class XxxExtensionFactory implements ExtensionFactory {
 
 <h4><a name="SPIReference-zh-%282%29%E6%89%A9%E5%B1%95%E6%8E%A5%E5%8F%A3%EF%BC%9A"></a>(2) 扩展接口：</h4>
 <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
-<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[com.alibaba.dubbo.rpc.proxy.ProxyFactory]]></script>
+<script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[com.alibaba.dubbo.rpc.ProxyFactory]]></script>
 </div></div>
 
 <h4><a name="SPIReference-zh-%283%29%E6%89%A9%E5%B1%95%E9%85%8D%E7%BD%AE%EF%BC%9A"></a>(3) 扩展配置：</h4>
@@ -1742,12 +1742,12 @@ com.alibaba.dubbo.rpc.proxy.JavassistProxyFactory]]></script>
     |-resources
         |-META-INF
             |-dubbo
-                |-com.alibaba.dubbo.rpc.proxy.ProxyFactory (纯文本文件，内容为：xxx=com.xxx.XxxProxyFactory)]]></script>
+                |-com.alibaba.dubbo.rpc.ProxyFactory (纯文本文件，内容为：xxx=com.xxx.XxxProxyFactory)]]></script>
 </div></div>
 <div class="code panel" style="border-width: 1px;"><div class="codeHeader panelHeader" style="border-bottom-width: 1px;"><b>XxxProxyFactory.java</b></div><div class="codeContent panelContent">
 <script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[package com.xxx;
 
-import com.alibaba.dubbo.rpc.proxy.ProxyFactory;
+import com.alibaba.dubbo.rpc.ProxyFactory;
 import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.RpcException;
 
@@ -1761,7 +1761,7 @@ public class XxxProxyFactory implements ProxyFactory {
     }
 }]]></script>
 </div></div>
-<div class="code panel" style="border-width: 1px;"><div class="codeHeader panelHeader" style="border-bottom-width: 1px;"><b>META-INF/dubbo/com.alibaba.dubbo.rpc.proxy.ProxyFactory</b></div><div class="codeContent panelContent">
+<div class="code panel" style="border-width: 1px;"><div class="codeHeader panelHeader" style="border-bottom-width: 1px;"><b>META-INF/dubbo/com.alibaba.dubbo.rpc.ProxyFactory</b></div><div class="codeContent panelContent">
 <script type="syntaxhighlighter" class="theme: Confluence; brush: java; gutter: false"><![CDATA[xxx=com.xxx.XxxProxyFactory]]></script>
 </div></div>
 <h3><a name="SPIReference-zh-%E7%BC%96%E8%AF%91%E5%99%A8%E6%89%A9%E5%B1%95"></a>编译器扩展</h3>
